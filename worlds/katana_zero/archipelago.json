@@ -2,7 +2,8 @@
     "game": "Katana ZERO",
     "minimum_ap_version": "0.6.8",
     "world_version": "0.1.0",
-    "authors": ["KatanaZeroAP"],
+    "authors": ["CheeserLPC"],
+    "url": "https://github.com/CheeserLPC/Archipelago-KatanaZero",
     "version": 7,
     "compatible_version": 7,
     "flags": ["supports_deathlink"]
