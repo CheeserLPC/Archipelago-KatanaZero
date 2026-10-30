@@ -87,7 +87,7 @@ def set_rules(world: "KatanaZeroWorld") -> None:
     # _require("Hotel - Penthouse Assassination")
 
     # Club Neon
-    _require("Club - Tape Completed",  "Item Throw")
+    _require("Club - Tape Completed",  "Strength Training")
 
     # Studio 51
     _require("Studio 51 - Tape Completed",    "Deflect")
