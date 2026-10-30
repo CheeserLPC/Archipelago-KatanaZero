@@ -2,7 +2,7 @@
 
 ## Required Software
 
-- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) (v0.5.0 or later)
+- [Archipelago](https://github.com/ArchipelagoMW/Archipelago/releases) (v0.6.8 or later)
 - Katana ZERO (Steam PC version)
 - The Katana ZERO APWorld (`katana_zero.apworld`) or Archipelago fork with Katana ZERO support
 
@@ -17,8 +17,8 @@
 ### For Developers (Using the Archipelago Fork)
 1. Clone the Archipelago repository fork:
    ```bash
-   git clone https://github.com/CheeserLPC/Archipelago.git
-   cd Archipelago
+   git clone https://github.com/CheeserLPC/Archipelago-KatanaZero.git
+   cd Archipelago-KatanaZero
    git checkout katana-zero
    ```
 2. Install dependencies:
