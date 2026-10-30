@@ -235,6 +235,12 @@ class KatanaZeroClient:
             if bool(slot_data.get("enemysanity", 0)):
                 self.game_state.enemysanity_enabled = True
 
+            # If abilities are not shuffled, unlock them immediately at start
+            if not bool(slot_data.get("shuffle_chronos", 1)):
+                self.items.mechanics["Chronos"] = True
+            if not bool(slot_data.get("shuffle_throw", 1)):
+                self.items.mechanics["Strength Training"] = True
+
             rand_music = bool(slot_data.get("randomize_music", 0))
             rand_sfx = bool(slot_data.get("randomize_sfx", 0))
             audio_seed = slot_data.get("audio_seed", None)
@@ -251,6 +257,8 @@ class KatanaZeroClient:
             logger.info(f"[CONNECTED] CONNECTED TO MULTIWORLD AS '{self.player_name}' (Slot {self.slot})")
             logger.info(f"Goal: {slot_data.get('goal', 'Unknown')}")
             logger.info(f"Starting Tape: {slot_data.get('starting_tape', 'Factory')}")
+            logger.info(f"Shuffle Chronos: {'ENABLED' if bool(slot_data.get('shuffle_chronos', 1)) else 'DISABLED'}")
+            logger.info(f"Shuffle Strength Training: {'ENABLED' if bool(slot_data.get('shuffle_throw', 1)) else 'DISABLED'}")
             logger.info(f"Enemysanity: {'ENABLED' if self.game_state.enemysanity_enabled else 'DISABLED'}")
             logger.info(f"DeathLink: {'ENABLED' if dl_enabled else 'DISABLED'} (Amnesty: {dl_amnesty})")
             logger.info(f"Music Randomizer: {'ENABLED' if rand_music else 'DISABLED'}")
