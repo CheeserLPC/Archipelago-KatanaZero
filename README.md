@@ -1,4 +1,18 @@
+# Katana ZERO — Archipelago Multiworld Integration
+> [!NOTE]
+> ### Katana ZERO Randomizer Fork
+> This is a fork of [Archipelago](https://archipelago.gg) containing the **Katana ZERO** multiworld randomizer integration, created and maintained by **CheeserLPC**.
+>
+> For installation and setup instructions, please refer to the **[Katana ZERO Setup Guide](worlds/katana_zero/setup_en.md)**.
+>
+> ---
+> *Katana ZERO is developed by **Askiisoft** and published by **Devolver Digital**. Copyright © 2019 Askiisoft. All rights reserved. This is an unofficial community modification and is not affiliated with, endorsed by, or sponsored by Askiisoft or Devolver Digital.*
+This integration brings full multiworld support to Katana ZERO, randomizing stage progression (VHS tapes), combat abilities (mechanic shards), collectible swords, government lab security keys, enemies (Enemysanity), and in-game combat traps with real-time DeathLink synchronization and music/SFX chaos.
+---
+
+
 # [Archipelago](https://archipelago.gg) ![Discord Shield](https://discordapp.com/api/guilds/731205301247803413/widget.png?style=shield) | [Install](https://github.com/ArchipelagoMW/Archipelago/releases)
+
 
 Archipelago provides a generic framework for developing multiworld capability for game randomizers. In all cases,
 presently, Archipelago is also the randomizer itself.
