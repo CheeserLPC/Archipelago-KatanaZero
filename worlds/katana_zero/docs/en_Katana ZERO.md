@@ -55,3 +55,16 @@ When trap items are rolled into filler slots, receiving a trap triggers an insta
 ## DeathLink
 
 When DeathLink is enabled, dying in Katana ZERO broadcasts a DeathLink signal to all connected players with custom Katana ZERO-flavored death messages. The `death_link_amnesty` setting allows players to accumulate a configurable number of free deaths before a signal is transmitted.
+
+## Links & Resources
+
+- **GitHub Repository:** [https://github.com/CheeserLPC/Archipelago-KatanaZero](https://github.com/CheeserLPC/Archipelago-KatanaZero)
+- **Bug Reports & Issues:** [https://github.com/CheeserLPC/Archipelago-KatanaZero/issues](https://github.com/CheeserLPC/Archipelago-KatanaZero/issues)
+- **Author:** CheeserLPC
+  
+## Copyright & Disclaimer
+
+Katana ZERO is developed by **Askiisoft** and published by **Devolver Digital**.
+Copyright © 2019 Askiisoft. All rights reserved. All trademarks, character names, game assets, and logos are property of their respective owners (Askiisoft and Devolver Digital).
+
+This Archipelago randomizer is an unofficial community project and is not affiliated with, endorsed by, or sponsored by Askiisoft or Devolver Digital.
