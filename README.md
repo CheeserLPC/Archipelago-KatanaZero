@@ -7,7 +7,7 @@
 >
 > ---
 > *Katana ZERO is developed by **Askiisoft** and published by **Devolver Digital**. Copyright © 2019 Askiisoft. All rights reserved. This is an unofficial community modification and is not affiliated with, endorsed by, or sponsored by Askiisoft or Devolver Digital.*
-This integration brings full multiworld support to Katana ZERO, randomizing stage progression (VHS tapes), combat abilities (mechanic shards), collectible swords, government lab security keys, enemies (Enemysanity), and in-game combat traps with real-time DeathLink synchronization and music/SFX chaos.
+This integration brings full multiworld support to Katana ZERO, randomizing stage progression (VHS tapes), combat abilities (mechanic shards), collectible swords, government lab security keys, enemies (Enemysanity), and in-game combat traps with real-time DeathLink synchronization and music/SFX randomization.
 ---
 
 
