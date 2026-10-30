@@ -141,7 +141,8 @@ GROUP0_SFX_IDS = (
 MECHANIC_FUNCTIONS: Dict[str, List[int]] = {
     "Chronos": [0x438B30],              # player_bullettime_check
     "Dodge Roll": [],                   # Kept vanilla; disabled only via Roll Disruptor trap
-    "Item Throw": [0x44D0C0],           # player_item_throw
+    "Item Throw": [0x44D0C0],
+    "Strength Training": [0x44D0C0],           # player_item_throw
     "Deflect": [],                      # Kept vanilla to preserve obj_record replay buffer
     "Wall Jump": [],                    # Kept vanilla per user request
 }
