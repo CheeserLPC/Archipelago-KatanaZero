@@ -5,6 +5,7 @@ class TestKatanaZeroDefault(WorldTestBase):
     game = "Katana ZERO"
 
     def test_default_beatable(self) -> None:
+        self.multiworld.state = self.multiworld.get_all_state()
         self.assertBeatable(True)
 
 
@@ -15,6 +16,7 @@ class TestKatanaZeroBossRush(WorldTestBase):
     }
 
     def test_boss_rush_beatable(self) -> None:
+        self.multiworld.state = self.multiworld.get_all_state()
         self.assertBeatable(True)
 
 
@@ -25,6 +27,7 @@ class TestKatanaZeroAllTapes(WorldTestBase):
     }
 
     def test_all_tapes_beatable(self) -> None:
+        self.multiworld.state = self.multiworld.get_all_state()
         self.assertBeatable(True)
 
 
@@ -35,7 +38,9 @@ class TestKatanaZeroEnemysanity(WorldTestBase):
     }
 
     def test_enemysanity_beatable(self) -> None:
+        self.multiworld.state = self.multiworld.get_all_state()
         self.assertBeatable(True)
+
 
 class TestKatanaZeroVanillaAbilities(WorldTestBase):
     game = "Katana ZERO"
@@ -45,6 +50,7 @@ class TestKatanaZeroVanillaAbilities(WorldTestBase):
     }
 
     def test_vanilla_abilities_beatable(self) -> None:
+        self.multiworld.state = self.multiworld.get_all_state()
         self.assertBeatable(True)
 
 
@@ -56,5 +62,5 @@ class TestKatanaZeroShuffledAbilities(WorldTestBase):
     }
 
     def test_shuffled_abilities_beatable(self) -> None:
+        self.multiworld.state = self.multiworld.get_all_state()
         self.assertBeatable(True)
-
