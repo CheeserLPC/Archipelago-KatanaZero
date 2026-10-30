@@ -55,6 +55,24 @@ class ShuffleSwords(Toggle):
     default = Toggle.option_true
 
 
+class ShuffleChronos(Toggle):
+    """
+    Whether Chronos (Slow-Motion) is locked at start and shuffled into the item pool.
+    If disabled, Chronos is unlocked from the beginning.
+    """
+    display_name = "Shuffle Chronos"
+    default = Toggle.option_true
+
+
+class ShuffleThrow(Toggle):
+    """
+    Whether Strength Training (Item Throw) is locked at start and shuffled into the item pool.
+    If disabled, Item Throw is unlocked from the beginning.
+    """
+    display_name = "Shuffle Strength Training (Throw)"
+    default = Toggle.option_true
+
+
 class Enemysanity(Toggle):
     """
     Whether every non-boss, non-optional enemy in the game counts as a check.
@@ -114,6 +132,8 @@ class KatanaZeroOptions(PerGameCommonOptions):
     starting_tape: StartingTape
     required_tapes: RequiredTapes
     shuffle_swords: ShuffleSwords
+    shuffle_chronos: ShuffleChronos
+    shuffle_throw: ShuffleThrow
     enemysanity: Enemysanity
     trap_percentage: TrapPercentage
     death_link: DeathLink

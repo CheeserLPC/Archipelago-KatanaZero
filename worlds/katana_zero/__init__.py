@@ -67,11 +67,21 @@ class KatanaZeroWorld(World):
         starting_tape_name = self.get_starting_tape_name()
         self.multiworld.push_precollected(self.create_item(starting_tape_name))
 
+        # Precollect mechanics if not shuffled
+        if not self.options.shuffle_chronos:
+            self.multiworld.push_precollected(self.create_item("Chronos"))
+        if not self.options.shuffle_throw:
+            self.multiworld.push_precollected(self.create_item("Strength Training"))
+
         # 2. Create all remaining progression and useful items
         pool = []
         for item_name, data in item_table.items():
             if item_name == starting_tape_name:
                 continue  # already precollected as starting item
+            if item_name == "Chronos" and not self.options.shuffle_chronos:
+                continue  # precollected at game start
+            if item_name == "Strength Training" and not self.options.shuffle_throw:
+                continue  # precollected at game start
             if data.classification in (ItemClassification.progression, ItemClassification.useful):
                 # Skip swords if shuffle_swords is off
                 if data.classification == ItemClassification.useful and not self.options.shuffle_swords:
@@ -112,6 +122,8 @@ class KatanaZeroWorld(World):
             "starting_tape": self.get_starting_tape_name(),
             "required_tapes": self.options.required_tapes.value,
             "shuffle_swords": self.options.shuffle_swords.value,
+            "shuffle_chronos": int(bool(self.options.shuffle_chronos.value)),
+            "shuffle_throw": int(bool(self.options.shuffle_throw.value)),
             "enemysanity": self.options.enemysanity.value,
             "trap_percentage": self.options.trap_percentage.value,
             "death_link": self.options.death_link.value,

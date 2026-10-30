@@ -87,7 +87,7 @@ def set_rules(world: "KatanaZeroWorld") -> None:
     # _require("Hotel - Penthouse Assassination")
 
     # Club Neon
-    _require("Club - Tape Completed",  "Strength Training")
+    # (Note: Strength Training / Throw is an open progression item, not tied to Club Tape)
 
     # Studio 51
     _require("Studio 51 - Tape Completed",    "Deflect")
@@ -99,8 +99,7 @@ def set_rules(world: "KatanaZeroWorld") -> None:
     _require("Mansion - Robber's Sack",   "Wall Jump")
 
     # Slaughterhouse
-    _require("Slaughterhouse - Camera Room",         "Chronos")
-    _require("Slaughterhouse - Camera Room Reached",  "Chronos")
+    # (Note: Chronos is an open progression item, not tied to Slaughterhouse Tape)
 
     # Bunker
     _require("Bunker - Tape Completed",     "Deflect")
