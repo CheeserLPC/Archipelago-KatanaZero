@@ -32,7 +32,7 @@ ITEM_NAMES: Dict[int, str] = {
     BASE_ITEM_ID + 12: "Dodge Roll",
     BASE_ITEM_ID + 13: "Wall Jump",
     BASE_ITEM_ID + 14: "Deflect",
-    BASE_ITEM_ID + 15: "Item Throw",
+    BASE_ITEM_ID + 15: "Strength Training",
     # Keys
     BASE_ITEM_ID + 16: "Prism Key",
     BASE_ITEM_ID + 17: "Master Key",
@@ -72,7 +72,7 @@ class ItemManager:
             "Dodge Roll": True,
             "Wall Jump": True,
             "Deflect": True,
-            "Item Throw": False,
+            "Strength Training": False,
         }
         self.keys: Set[str] = set()
         self.swords: Set[str] = set()
