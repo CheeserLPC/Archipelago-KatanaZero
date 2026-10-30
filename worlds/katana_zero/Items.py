@@ -44,7 +44,7 @@ item_table: Dict[str, ItemData] = {
     "Chronos":              ItemData(BASE_ITEM_ID + 11, ItemClassification.progression, 1),
     "Wall Jump":            ItemData(BASE_ITEM_ID + 13, ItemClassification.progression, 1),
     "Deflect":              ItemData(BASE_ITEM_ID + 14, ItemClassification.progression, 1),
-    "Item Throw":           ItemData(BASE_ITEM_ID + 15, ItemClassification.progression, 1),
+    "Strength Training":    ItemData(BASE_ITEM_ID + 15, ItemClassification.progression, 1),
 
     # ── Government Lab Keys (progression) ── IDs 82100016-82100020
     "Prism Key":            ItemData(BASE_ITEM_ID + 16, ItemClassification.progression, 1),
