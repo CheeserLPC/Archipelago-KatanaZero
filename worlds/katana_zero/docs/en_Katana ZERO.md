@@ -7,9 +7,8 @@ In the Katana ZERO Archipelago randomizer, access to stages, combat mechanics, w
 
 ## Where is the options page?
 
-The [player options page for this game](../player-options) contains all the options you need to configure and export a config file.
 
-*(If viewing outside of WebHost, you can generate your YAML file directly in the Archipelago Launcher via **"Generate Template Settings"**, or refer to the [Setup Guide](setup_en.md) for full option descriptions).*
+You can generate your YAML file directly in the Archipelago Launcher via **"Generate Template Settings"**, or refer to the [Setup Guide](setup_en.md) for full option descriptions).*
 
 ## What Does Randomization Do to This Game?
 
