@@ -17,7 +17,7 @@
 ### For Developers (Using the Archipelago Fork)
 1. Clone the Archipelago repository fork:
    ```bash
-   git clone https://github.com/<your-username>/Archipelago.git
+   git clone https://github.com/CheeserLPC/Archipelago.git
    cd Archipelago
    git checkout katana-zero
    ```
