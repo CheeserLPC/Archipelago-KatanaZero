@@ -257,9 +257,11 @@ class GameStateTracker:
                 self.on_player_died()
 
         # 3. Enforce Mechanic Locks/Unlocks in memory
-        for mech_name in ["Chronos", "Dodge Roll", "Wall Jump", "Deflect", "Item Throw"]:
+        for mech_name in ["Chronos", "Dodge Roll", "Wall Jump", "Deflect", "Strength Training"]:
             is_unlocked = self.items.mechanics.get(mech_name, False)
             if mech_name == "Chronos" and self.traps.is_slowmo_disabled():
+                is_unlocked = False
+            if mech_name == "Strength Training" and self.traps.is_attack_disabled():
                 is_unlocked = False
             self.mem.set_mechanic_state(mech_name, is_unlocked)
 
