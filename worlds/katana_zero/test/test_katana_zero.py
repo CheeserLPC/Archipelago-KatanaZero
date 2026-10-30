@@ -36,3 +36,25 @@ class TestKatanaZeroEnemysanity(WorldTestBase):
 
     def test_enemysanity_beatable(self) -> None:
         self.assertBeatable(True)
+
+class TestKatanaZeroVanillaAbilities(WorldTestBase):
+    game = "Katana ZERO"
+    options = {
+        "shuffle_chronos": 0,
+        "shuffle_throw": 0,
+    }
+
+    def test_vanilla_abilities_beatable(self) -> None:
+        self.assertBeatable(True)
+
+
+class TestKatanaZeroShuffledAbilities(WorldTestBase):
+    game = "Katana ZERO"
+    options = {
+        "shuffle_chronos": 1,
+        "shuffle_throw": 1,
+    }
+
+    def test_shuffled_abilities_beatable(self) -> None:
+        self.assertBeatable(True)
+
